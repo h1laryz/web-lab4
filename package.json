@@ -8,9 +8,10 @@
     "eslint:check": "eslint .",
     "format:fix": "prettier --write .",
     "format:check": "prettier --check .",
-    "stylelint:fix": "stylelint \"**/*.css\" --fix",
-    "stylelint:check": "stylelint \"**/*.css\"",
-    "test": "npm run format:check && npm run eslint:check && npm run stylelint:check"
+    "stylelint:fix": "stylelint \"css/style.css\" --fix",
+    "stylelint:check": "stylelint \"css/style.css\"",
+    "test": "npm run format:check && npm run eslint:check && npm run stylelint:check",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
