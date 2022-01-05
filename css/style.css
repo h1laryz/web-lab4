@@ -25,10 +25,6 @@ header {
   height: 50px;
 }
 
-#check-menu {
-  display: none;
-}
-
 .wrapper > label {
   display: block;
   position: absolute;
@@ -39,6 +35,24 @@ header {
   cursor: pointer;
   z-index: 2;
   line-height: 40px;
+}
+
+#check-burger {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#check-burger:checked {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .burger-line {
@@ -84,24 +98,24 @@ header {
   background-color: var(--black-color);
 }
 
-#check-menu:checked ~ .burger-menu {
+#check-burger:checked ~ .burger-menu {
   max-height: 500px;
   font-size: 16px;
 }
 
-#check-menu:checked ~ .first {
+#check-burger:checked ~ .first {
   display: none;
 }
 
-#check-menu:checked ~ .second {
+#check-burger:checked ~ .second {
   transform: rotate(90deg);
 }
 
-#check-menu:checked ~ .third {
+#check-burger:checked ~ .third {
   transform: rotate(-90deg);
 }
 
-#check-menu:checked ~ .fourth {
+#check-burger:checked ~ .fourth {
   display: none;
 }
 
