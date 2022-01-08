@@ -1,0 +1,36 @@
+{
+  "name": "web-lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint:fix": "eslint . --fix",
+    "eslint:check": "eslint .",
+    "format:fix": "prettier --write .",
+    "format:check": "prettier --check .",
+    "stylelint:fix": "stylelint \"css/style.css\" --fix",
+    "stylelint:check": "stylelint \"css/style.css\"",
+    "test": "npm run format:check && npm run eslint:check && npm run stylelint:check",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h1lary7/web-lab4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h1lary7/web-lab4/issues"
+  },
+  "homepage": "https://github.com/h1lary7/web-lab4#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "husky": "^7.0.4",
+    "prettier": "2.5.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
